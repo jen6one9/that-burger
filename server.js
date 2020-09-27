@@ -1,5 +1,6 @@
 var mysql = require("mysql");
 var express = require("express")
+var = require("./config/orm.js")
 
 
 // Set the port of our application
