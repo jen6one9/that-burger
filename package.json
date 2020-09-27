@@ -1,0 +1,36 @@
+{
+  "name": "that-burger",
+  "version": "1.0.0",
+  "description": "burger logger with MySQL, Node, Express, Handlebars and a homemade ORM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jen6one9/that-burger.git"
+  },
+  "keywords": [
+    "burger",
+    "logger",
+    "with",
+    "mySQL",
+    "Node",
+    "Express",
+    "Handlebars",
+    "and",
+    "an",
+    "ORM"
+  ],
+  "author": "jeneth diesta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jen6one9/that-burger/issues"
+  },
+  "homepage": "https://github.com/jen6one9/that-burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
