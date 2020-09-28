@@ -38,7 +38,7 @@ This app is intended for free use.
 
 
 ##  Acknowledgements 
-I would like to acknowledge and thank my tutor and cohort TA's for their support on this assignment! 
+I would like to acknowledge and thank my tutor and cohort TA's for their support on this assignment! I also would like to acknowledge @amir_v_ali for the burger pix! 
 
  
 
