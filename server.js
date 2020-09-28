@@ -1,6 +1,6 @@
 var mysql = require("mysql");
-var express = require("express")
-var = require("./config/orm.js")
+var require = require("express")
+var require = ("./config/orm.js")
 
 
 // Set the port of our application
@@ -30,3 +30,7 @@ connection.connect(function(err) {
 
   console.log("connected as id " + connection.threadId);
 });
+
+// Console log all the hamburger names.
+orm.select("burger_name", "burgers");
+
