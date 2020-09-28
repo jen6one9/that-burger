@@ -30,7 +30,3 @@ connection.connect(function(err) {
 
   console.log("connected as id " + connection.threadId);
 });
-
-// Console log all the hamburger names.
-orm.select("burger_name", "burgers");
-

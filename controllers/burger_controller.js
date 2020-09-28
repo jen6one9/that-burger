@@ -1,7 +1,11 @@
+var orm = require('../config/burger.js');
 var router = require("express").Router()
 var db = require("../db/db.json")
 var fs = require("fs")
 const { maxHeaderSize } = require("http")
+
+
+
 router = require("express").Router();
 router.get("/api/burger_name", function (req, res) { //Should read the db file and return all hamburgers
     db = JSON.parse(fs.readfilesync("./db.json", "utf8"))  //utf8 means reads in english format
@@ -27,7 +31,7 @@ router.delete("/api/devour/:id", function (req, res) { //Should receive a query 
     db = JSON.parse(fs.readfilesync("./db.json", "utf8"))  //utf8 means reads in english format
     console.log("delete route", db)
     res.json(db)
-    fs.writeFile(path.join (__dirname, "./db/db.json"), JSON.stringify(db), function (err) {
+    fs.writeFile(path.join(__dirname, "./db/db.json"), JSON.stringify(db), function (err) {
         if (err) console.log(err);
 
         console.log("delete note");
