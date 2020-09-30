@@ -1,4 +1,3 @@
-var orm = require('../config/burger.js');
 var router = require("express").Router()
 var db = require("../db/db.json")
 var fs = require("fs")
