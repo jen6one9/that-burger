@@ -1,7 +1,7 @@
 <div class="container">
     <div class="jumbotron">
-        <img src="../assets/img/burger.jpg">
-        <h1>Eat-That-Burger</h1>
+        <img src="../assets/burger.jpg">
+        <h1>Eat-Da-Burger!</h1>
     </div>
 </div>
 
@@ -14,13 +14,10 @@
                     {{#each burgers}}
                     {{#unless this.devoured}}
                     <li class="list-group-item">
-                    {{this.burger_name}}  
-                            <button id="sizebtn"
-                            data-id="{{this.id}}"
-                            
-                             class="update-order btn btn-success btn-lg btn-block"
-                                type="submit">Devour</button>
-                   
+                        {{this.burger_name}}
+                        <button id="sizebtn" data-id="{{this.id}}" class="update-order btn btn-success btn-lg btn-block"
+                            type="submit">Devour</button>
+
                     </li>
                     {{/unless}}
                     {{/each}}
@@ -36,9 +33,9 @@
                     <li class="list-group-item">
                         {{this.burger_name}}
                     </li>
-                     <button id="sizebtn" class="delete-order btn btn-success btn-lg btn-block"
-                                data-id="{{this.id}}" type="submit">Delete</button>
-                       
+                    <button id="sizebtn" class="delete-order btn btn-success btn-lg btn-block" data-id="{{this.id}}"
+                        type="submit">Delete</button>
+
                     {{/if}}
                     {{/each}}
                 </ul>
@@ -54,11 +51,11 @@
             <div class="panel-body">
                 <p>Enter the name of burger you're craving and tap the submit button.</p>
                 <!-- section to add burgers -->
-                <form class="create-form">
+                <form>
                     <div class="form-group">
                         <label for="name">Burger Name: </label>
                         <input type="text" id="burger_name" name="burger_name" placeholder="Yummy Burger">
-                        <button class="btn btn-primary btn-sm" type="submit"> Add The Burger</button>
+                        <button id="create-form" class="btn btn-primary btn-sm" type="submit"> Add The Burger</button>
                     </div>
                 </form>
             </div>
