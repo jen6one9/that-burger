@@ -14,10 +14,13 @@
                     {{#each burgers}}
                     {{#unless this.devoured}}
                     <li class="list-group-item">
-                        <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
-                            <button id="sizebtn" class="btn btn-success btn-lg btn-block"
-                                type="submit">{{this.burger_name}}</button>
-                        </form>
+                    {{this.burger_name}}  
+                            <button id="sizebtn"
+                            data-id="{{this.id}}"
+                            
+                             class="update-order btn btn-success btn-lg btn-block"
+                                type="submit">Devour</button>
+                   
                     </li>
                     {{/unless}}
                     {{/each}}
@@ -33,6 +36,9 @@
                     <li class="list-group-item">
                         {{this.burger_name}}
                     </li>
+                     <button id="sizebtn" class="delete-order btn btn-success btn-lg btn-block"
+                                data-id="{{this.id}}" type="submit">Delete</button>
+                       
                     {{/if}}
                     {{/each}}
                 </ul>
@@ -48,10 +54,10 @@
             <div class="panel-body">
                 <p>Enter the name of burger you're craving and tap the submit button.</p>
                 <!-- section to add burgers -->
-                <form action="/burgers" method="POST">
+                <form class="create-form">
                     <div class="form-group">
                         <label for="name">Burger Name: </label>
-                        <input type="text" id="name" name="burger_name" placeholder="Yummy Burger">
+                        <input type="text" id="burger_name" name="burger_name" placeholder="Yummy Burger">
                         <button class="btn btn-primary btn-sm" type="submit"> Add The Burger</button>
                     </div>
                 </form>
