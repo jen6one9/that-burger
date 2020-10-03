@@ -40,9 +40,9 @@
 
   $(".delete-order").on("click", function(event) {
     var id = $(this).data("id");
-    console.log("delete",id)
+    console.log("delete", id)
     // Send the DELETE request.
-    $.ajax("/api/burgers/" + id, {
+    $.ajax("/api/burgers/", + id, {
       type: "DELETE"
     }).then(
       function() {

@@ -14,6 +14,7 @@ function printQuestionMarks(num) {
   for (var i = 0; i < num; i++) {
     arr.push("?");
   }
+
   return arr.toString();
 }
 
@@ -54,7 +55,7 @@ var orm = {
     queryString += printQuestionMarks(vals.length);
     queryString += ") ";
 
-    // console.log(queryString);
+    console.log(queryString);
 
     // Perform the database query
     connection.query(queryString, vals, function (err, result) {
@@ -75,12 +76,29 @@ var orm = {
     queryString += " WHERE ";
     queryString += condition;
 
-    // console.log(queryString);
+    console.log(queryString);
     connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
       // Return results in callback
+      cb(result);
+    });
+  },
+  
+  delete: function (table, condition, cb) {
+    var queryString = "DELETE FROM " + table;
+    queryString += " WHERE ";
+    queryString += condition;
+    console.log(queryString);
+
+    connection.query(queryString, function (err, result) {
+      if (err) {
+        throw err;
+      }
+
+
+
       cb(result);
     });
   }
