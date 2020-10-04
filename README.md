@@ -6,7 +6,7 @@ Eat-Da-Burger! is a restaurant app that lets users devour burgers they're cravin
 This project seeks to create a create a burger logger with MySQL, Node, Express, Handlebars and an ORM.
 
 ## Deployed Site Link
-Here's the link to my site:  
+Here's the link to my site:  https://jen6one9.github.io/that-burger/.
 
 
 ## Table of Contents
