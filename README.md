@@ -1,34 +1,23 @@
 # that-burger
-Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
+Eat-Da-Burger! is a restaurant app that lets users devour burgers they're craving!
 
  
 ## Description
 This project seeks to create a create a burger logger with MySQL, Node, Express, Handlebars and an ORM.
+
+## Deployed Site Link
+Here's the link to my site:  
 
 
 ## Table of Contents
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [License](#license)
-4. [Contributions](#contributions)
-5. [Tests](#tests)
+4. [Acknowledgements](#acknowledgements)
+
 
 ## Installation
-Step 1. Clone this GitHub Repo
-
-
-Step 2. Run npm init on your local terminal 
-
-
- 
-
-# Demo
-Play this demo to see how the app functions [Click Here]( w)
-
- 
-
-# Tests
-[Click Here](ht )
+Please use Heroku to open this app.
 
 ##  Usage
 This app is intended for free use.
